@@ -16,6 +16,8 @@
       <!-- Main -->
       <main class="container bordo position-relative">
         <div class="hero">
+            <input type="text" id="filter-input">
+            <label for="filterInput"></label>
             <!-- sezione in alto con i due bottoni per tornare indietro e un user profile -->
             <div class="d-flex justify-content-between">
                 <div class="d-flex arrow-buttons">
@@ -44,15 +46,15 @@
             <!-- fine sezione in alto -->
             <!-- sezione hero album -->
             <div class="row mt-5 d-flex align-items-end">
-                <div class="col-3">
-                    <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="" style="width: 100%; ">
+                <div class="col-3" id="foto-profilo">
+                    
                 </div>
                 <div class="col-9 mb-5">
                     <span class="fw-bold">Album</span>
-                    <h1 class="">Gioventù Brucata</h1>
-                    <div class="dettagli-hero">
-                        <img  src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="">
-                        <span class="fw-bold">Pinguini Tattici Nucleari</span>
+                    <h1 id="album-title"></h1>
+                    <div class="dettagli-hero" id="artist-profile">
+                        <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="">
+                        <span class="fw-bold" id="artist-name">Pinguini Tattici Nucleari</span>
                         <span>•</span>
                         <span class="fw-bold">2017</span>
                         <span>•</span>
