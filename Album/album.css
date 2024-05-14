@@ -3,6 +3,10 @@
     height: 100vh;
 }
 
+body {
+    background-color: #121212;
+}
+
 /* Sezione user */
 
 .dropdown.user-container {
@@ -44,4 +48,21 @@
 
 .arrow-buttons span a i {
     color: white;
+}
+
+/* sezione hero */
+
+.dettagli-hero img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.hero {
+    border: 1px solid blue;
+    height: 50%;
+    background-color: burlywood;
 }
