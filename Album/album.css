@@ -63,6 +63,41 @@ h1 {
 
 .hero {
     border: 1px solid blue;
-    height: 50%;
+    height: 600px;
     background-color: burlywood;
+}
+
+/* Lista canzoni */
+
+.lista-canzoni {
+    border: 1px solid green;
+    height: 100%;
+    width: 98.2%;
+    top: 450px;
+    background-image: linear-gradient(180deg, #0000008a, transparent);
+}
+
+
+.interactive-btn {
+    font-size: 40px;
+    color: #ffffffa8;
+}
+
+.interactive-btn span:first-of-type {
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #1ed760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    color: black;
+}
+
+table.table {
+    --bs-table-color: white;
+    --bs-table-bg: transparent;
+    --bs-table-border-color: transparent;
 }
