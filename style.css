@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quadrati {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primocontenitoresx {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100%;
+    background-color: #000000;
+    border-bottom: 1px solid #4d4d4d;
+    position: relative;
+}
+
+.primocontenitoresx i {
+    color: #ffff;
+    margin: 20px 30px 0;
+    font-size: 18px;
+}
+
+.primocontenitoresx p {
+    color: #ffff;
+}
+
+.sx {
+    margin: 10px 30px;
+    color: #ffff;
+    font-size: 12px;
+    width: 100%;
+}
+
+#arrow,
+#arrow2,
+#arrow3 {
+    position: relative;
+    top: -5px;
+    left: 85px;
+    font-size: 12px;
+}
+
+#home,
+#library,
+#cerca,
+#bookmark,
+#plus {
+    color: #ffff;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+#dots{
+    font-size: 25px;
+}
+
+#bookmark {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#plus {
+    margin-left:30px;
+    margin-top: 50px;
+}
+
+#heart {
+    background-color: #ffff;
+    color: #000000;
+    margin: 15px 30px;
+    font-size: 20px;
+}
+
+#bookmark {
+    background-color: #004537;
+    margin-top: 15px;
+}
+
+.linea {
+    margin: auto;
+    width: 82%;
+    height: 1px;
+    border: 1px solid rgb(163, 163, 163);
+
+}
+
+.contenitoredx {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    background-color: #000000;
+}
+.first{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#minus, #window, #x{
+    color: #ffff;
+    margin: 10px 20px;
+    font-size: 10px;
+}
+.amici{
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    font-size: 20px;
+    margin: 10px;
+    margin-top: 5px;
+}
+.icons i{
+    margin: 0 10px;
+}
+.accounts{
+    margin-top: 30px;
+    display: flex;
+    color: #ffff;
+    align-items: start;
+    line-height: 25px;
+}
+.img{
+    background-color: #d829b2;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
+.info{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.info i{
+    font-size: 4px;
+    margin: 0 5px;
+}
+.info p{
+    margin: 0 5px;
+}
+.fa-solid.fa-bars{
+    transform: rotate(90deg);
+}
+#primo-testo-dx i, #secondo-testo-dx i, #terzo-testo-dx i{
+    font-size: 10px;
+    margin: 0 10px;
+}
+.time{
+    margin-left: 15px;
+    font-size: 12px;
+}
+#primo-testo-dx > .fa-regular:first-child {
+    margin-right: 10px;
+}
+.main{
+    border: 3px solid red;
+    width: 900px;
+    
+}
