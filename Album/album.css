@@ -1,0 +1,103 @@
+.bordo {
+    border: 2px solid red;
+    height: 100vh;
+}
+
+body {
+    background-color: #121212;
+}
+
+/* Sezione user */
+
+.dropdown.user-container {
+    margin: 5px 10px;
+}
+
+.btn.btn-dark.dropdown-toggle img {
+    width: 30px;
+    border-radius: 50px;
+}
+
+.btn.btn-dark.dropdown-toggle .user {
+    border-radius: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 230px;
+}
+
+.btn.btn-dark.dropdown-toggle.d-flex {
+    width: 200px;
+    padding: 2px 10px 2px 2px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* sezione arrow buttons */
+.arrow-buttons span {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+
+.arrow-buttons span a i {
+    color: white;
+}
+
+/* sezione hero */
+
+.dettagli-hero img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.hero {
+    border: 1px solid blue;
+    height: 600px;
+    background-color: burlywood;
+}
+
+/* Lista canzoni */
+
+.lista-canzoni {
+    border: 1px solid green;
+    height: 100%;
+    width: 98.2%;
+    top: 450px;
+    background-image: linear-gradient(180deg, #0000008a, transparent);
+}
+
+
+.interactive-btn {
+    font-size: 40px;
+    color: #ffffffa8;
+}
+
+.interactive-btn span:first-of-type {
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #1ed760;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+    color: black;
+}
+
+table.table {
+    --bs-table-color: white;
+    --bs-table-bg: transparent;
+    --bs-table-border-color: transparent;
+}
