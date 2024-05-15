@@ -101,3 +101,9 @@ table.table {
     --bs-table-bg: transparent;
     --bs-table-border-color: transparent;
 }
+
+/* lettore musicale sticky */
+
+.lettore-musicale {
+    background-color: #181818;
+}
