@@ -8,6 +8,7 @@ async function chiamataFetch() {
     let totSec = 0;
     let min = 0;
     let sec = 0;
+    let ashtag = 0;
 
     const response = await fetch(api + id, {
         headers: {
@@ -39,13 +40,17 @@ async function chiamataFetch() {
 
     const tracks = document.getElementById('lista-canzoni');
     data.tracks.data.map((traccia) => {
+        ashtag++
+        totSec=parseInt(traccia.duration);
+        min = parseInt(totSec/60);
+        sec = parseInt(totSec - (min*60));
         tracks.innerHTML += 
         `
                 <tr>
-                  <th class="col-1">1</th>
+                  <th class="col-1">${ashtag}</th>
                   <td class="col-7">${traccia.title}</td>
                   <td class="col-2">${traccia.rank}</td>
-                  <td class="col-2">${traccia.duration}</td>
+                  <td class="col-2">${min}:${sec}</td>
                 </tr>
         `
     });
