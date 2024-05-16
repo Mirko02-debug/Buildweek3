@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #171717;
+}
+
 .quadrati {
     display: flex;
     justify-content: space-between;
@@ -54,7 +58,8 @@
     margin: 10px 30px;
     font-size: 20px;
 }
-#dots{
+
+#dots {
     font-size: 25px;
 }
 
@@ -64,7 +69,7 @@
 }
 
 #plus {
-    margin-left:30px;
+    margin-left: 30px;
     margin-top: 50px;
 }
 
@@ -95,17 +100,22 @@
     width: 310px;
     background-color: #000000;
 }
-.first{
+
+.first {
     display: flex;
     justify-content: end;
     align-items: center;
 }
-#minus, #window, #x{
+
+#minus,
+#window,
+#x {
     color: #ffff;
     margin: 10px 20px;
     font-size: 10px;
 }
-.amici{
+
+.amici {
     display: flex;
     justify-content: space-between;
     color: #ffff;
@@ -113,50 +123,248 @@
     margin: 10px;
     margin-top: 5px;
 }
-.icons i{
+
+.icons i {
     margin: 0 10px;
 }
-.accounts{
+
+.accounts {
     margin-top: 30px;
     display: flex;
     color: #ffff;
     align-items: start;
     line-height: 25px;
+    justify-content: center;
 }
-.img{
+
+.img {
     background-color: #d829b2;
     border-radius: 100%;
     width: 45px;
     height: 45px;
     margin-left: 20px;
 }
-.info{
+
+.info {
     font-size: 14px;
     margin-left: 10px;
 }
-.info i{
+
+.info i {
     font-size: 4px;
     margin: 0 5px;
 }
-.info p{
+
+.info p {
     margin: 0 5px;
 }
-.fa-solid.fa-bars{
+
+.fa-solid.fa-bars {
     transform: rotate(90deg);
 }
-#primo-testo-dx i, #secondo-testo-dx i, #terzo-testo-dx i{
+
+#primo-testo-dx i,
+#secondo-testo-dx i,
+#terzo-testo-dx i {
     font-size: 10px;
     margin: 0 10px;
 }
-.time{
+
+.time {
     margin-left: 15px;
     font-size: 12px;
 }
-#primo-testo-dx > .fa-regular:first-child {
+
+#primo-testo-dx>.fa-regular:first-child {
     margin-right: 10px;
 }
-.main{
+
+.main {
     border: 3px solid red;
     width: 900px;
-    
+    overflow-y: scroll;
+}
+
+.up {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 150px;
+    height: 28px;
+    background-color: #000000;
+    border-color: #000000;
+    padding-left: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.dropdown img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    position: absolute;
+    left: -10px;
+}
+
+.bottoni {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.bottoni i {
+    margin: 0 10px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 7px 12px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.colore {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.colore i {
+    color: #ffffff;
+}
+
+.jumbo {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 200px;
+    background: linear-gradient(to top right, rgb(0, 0, 0), rgb(80, 80, 80));
+}
+
+.txt-btn {
+    margin-left: 20px;
+
+}
+
+.album-img {
+    border: 2px solid fuchsia;
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.album,
+.title,
+.artisti,
+.payoff {
+    color: #ffffff;
+}
+
+.btn-play {
+    background-color: #1ed760;
+    padding: 7px;
+    border-radius: 25px;
+    width: 80px;
+    border: 1px solid #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-jumbo {
+    background-color: #000000;
+    padding: 7px;
+    border-radius: 25px;
+    width: 80px;
+    border: 1px solid #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 1em;
+    color: #ffffff;
+}
+
+.annunci {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    margin-left: 18em;
+    margin-bottom: 5em;
+    background-color: #222222;
+    display: none;
+}
+
+.annunci p {
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #4c4c4c;
+}
+.bnsr{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 30px;
+}
+.album-shelf{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid blue;
+    width: 95%;
+    height: 200px;
+}
+.card-random{
+    border: 2px solid fuchsia;
+    height: 35%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.album-pics{
+    border: 2px solid green;
+    width: 28%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.album-mini{
+    border: 2px solid red;
+    width: 50%;
+    height: 50%;
+}
+.like{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.card-random p{
+    color: #ffffff;
+    font-size: 12px;
+}
+.album-shelf-titoli{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.tit2{
+    font-size: 12px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #ffffff;
 }
