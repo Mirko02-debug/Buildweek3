@@ -12,89 +12,214 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- Sidebar -->
+  <div class="quadrati">
+    <div class="primocontenitoresx">
+        <p><i id="dots" class="fa-solid fa-ellipsis"></i></p>
+        <p><i id="home" class="fa-solid fa-house"></i>Home</i></p>
+        <p><i id="cerca" class="fa-solid fa-magnifying-glass"></i>Cerca</i></p>
+        <p><i id="library" class="fa-solid fa-lines-leaning"></i></i>La tua libreria</i></p>
+        <p><i id="plus" class="fa-solid fa-square-plus"></i>Crea playlist</p>
+        <p><i id="heart" class="fa-solid fa-heart"></i>Brani che ti piacciono</p>
+        <p><i id="bookmark" class="fa-solid fa-bookmark"></i>I tuoi episodi</i></p>
+        <div class="linea"></div>
+        <p class="sx">early stage emily syndrome (sett-ott 2022)</p>
+        <p class="sx">Be The Young</p>
+        <p class="sx">cit. Kimiko (lug-ago 2022)</p>
+        <p class="sx">saggio vibes &#128131 [] &#129648</p>
+        <p class="sx">main character energy (mag-giu 2022)</p>
+        <p class="sx">that fucking mood &#128298; &#x2620; </p>
+        <p class="sx">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</p>
+        <p class="sx">An Emily Winchester kind of mood &#128298; &#x1f595;</p>
+        <p class="sx">landing page (mar-apr 2022)<i id="arrow" class="fa-solid fa-circle-arrow-down"></i></p>
+        <p class="sx">2021 lol</p>
+        <p class="sx">cosa cazzo vuol dire questa affermazione (gen-fe...<i id="arrow2"
+                class="fa-solid fa-circle-arrow-down"></i></p>
+        <p class="sx">honey and glass (nov-dic 2021)</p>
+        <p class="sx">(Revenge) Training Arc &#x1f98d;</p>
+        <p class="sx">Lidia &#x1f91d; Emily</p>
+        <p class="sx">minecraft e nintendo switch (sep-oct 2021)</p>
+        <p class="sx">Culo 2021<i id="arrow3" class="fa-solid fa-users"></i></p>
+        <p class="sx">Frah Quintale Mix</p>
+        <p class="sx">Francesco Guccini Mix</p>
+        <p class="sx">early stage emily syndrome (sett-ott 2022)</p>
+        <p class="sx">Be The Young</p>
+        <p class="sx">cit. Kimiko (lug-ago 2022)</p>
+    </div>
+    <!-- main -->
+    <main class="container bordo position-relative">
+      <div class="hero">
+          <input type="text" id="filter-input">
+          <label for="filterInput"></label>
+          <!-- sezione in alto con i due bottoni per tornare indietro e un user profile -->
+          <div class="d-flex justify-content-between">
+              <div class="d-flex arrow-buttons">
+                  <!-- i due bottoni -->
+                  <span><a href="/index.html"><i class="bi bi-chevron-left"></i></a></span>
+                  <span><a href=""><i class="bi bi-chevron-right"></i></a></span>
+              </div>
+              <div>
+                  <!-- user -->
+                  <div class="dropdown user-container">
+                      <button class="btn btn-dark dropdown-toggle d-flex align-items-center " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="user">
+                              <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="Immagine del profilo">
+                              <span>Abd elrahman Mohamed</span>
+                          </div>
+
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Exit</a></li>
+                      </ul>
+                    </div>
+              </div>
+          </div>
+          <!-- fine sezione in alto -->
+          <!-- sezione hero album -->
+          <div class="row mt-5 d-flex align-items-end">
+              <div class="col-3" id="foto-profilo">
+                  
+              </div>
+              <div class="col-9 mb-5">
+                  <span class="fw-bold">Album</span>
+                  <h1 id="album-title"></h1>
+                  <div class="dettagli-hero" id="artist-profile">
+                      <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="">
+                      <span class="fw-bold" id="artist-name">Pinguini Tattici Nucleari</span>
+                      <span>•</span>
+                      <span class="fw-bold">2017</span>
+                      <span>•</span>
+                      <span class="fw-bold">12 Brani, </span>
+                      <span>53 min 20 sec</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- fine hero -->
+      <!-- Lista canzoni -->
+      <div class="position-absolute lista-canzoni">
+          <!-- play button, like and download -->
+          <div class="d-flex align-items-center gap-3 interactive-btn ">
+              <span><i class="bi bi-play-fill"></i></span>
+              <span><i class="bi bi-heart"></i></span>
+              <span><i class="bi bi-arrow-down-circle"></i></span>
+              <span><i class="bi bi-three-dots"></i></span>
+          </div>
+          <!-- table con tutte le canzoni -->
+          <table class="table mt-5">
+              <thead>
+                <tr>
+                  <th class="col-1">#</th>
+                  <th class="col-7">Titolo</th>
+                  <th class="col-2">Riproduzioni</th>
+                  <th class="col-2"><i class="bi bi-clock"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-1">1</th>
+                  <td class="col-7">Mark</td>
+                  <td class="col-2">Otto</td>
+                  <td class="col-2">@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </main>
+    <div class="contenitoredx">
+        <div class="first">
+            <i id="minus" class="fa-regular fa-window-minimize"></i>
+            <i id="window" class="fa-regular fa-window-restore"></i>
+            <i id="x" class="fa-solid fa-x"></i>
+        </div>
+        <div class="amici">
+            <div class="text">
+                <p><b>Attività Amici</b></p>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-user-plus"></i>
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+        <div class="accounts">
+            <div class="img"></div>
+            <div class="info">
+                <h4>Charlie Hookham</h4>
+                <p>In Carnera<i class="fa-solid fa-circle"></i>Yurni Zourna</p>
+                <p id="primo-testo-dx"><i class="fa-regular fa-circle-dot"></i>EP<i class="fa-solid fa-bars" style="transform: rotate(90deg);"></i></p>
+            </div>
+            <div class="time">4 ore</div>
+        </div>
+        <div class="accounts">
+            <div class="img"></div>
+            <div class="info">
+                <h4>lightdark02</h4>
+                <p>Aimed to Kill<i class="fa-solid fa-circle"></i>Jade LeMac</p>
+                <p id="secondo-testo-dx"><i class="fa-regular fa-circle-dot"></i>Aimed to Kill</p>
+            </div>
+            
+            <div class="time">4 ore</div>
+        </div>
+        <div class="accounts">
+            <div class="img"></div>
+            <div class="info">
+                <h4>Valeria Traverso</h4>
+                <p>New Kings<i class="fa-solid fa-circle"></i>Sleeping Wolf</p>
+                <p id="terzo-testo-dx"><i class="fa-solid fa-music"></i>Twint Badass mood</p>
+            </div>
+            
+            <div class="time">3 giorni</div>
+        </div>
+    </div>
+</div>
     
       <!-- Main -->
-      <main class="container bordo position-relative">
-        <div class="hero">
-            <input type="text" id="filter-input">
-            <label for="filterInput"></label>
-            <!-- sezione in alto con i due bottoni per tornare indietro e un user profile -->
-            <div class="d-flex justify-content-between">
-                <div class="d-flex arrow-buttons">
-                    <!-- i due bottoni -->
-                    <span><a href="/index.html"><i class="bi bi-chevron-left"></i></a></span>
-                    <span><a href=""><i class="bi bi-chevron-right"></i></a></span>
-                </div>
-                <div>
-                    <!-- user -->
-                    <div class="dropdown user-container">
-                        <button class="btn btn-dark dropdown-toggle d-flex align-items-center " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="user">
-                                <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="Immagine del profilo">
-                                <span>Abd elrahman Mohamed</span>
-                            </div>
+      
 
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Profile</a></li>
-                          <li><a class="dropdown-item" href="#">Settings</a></li>
-                          <li><a class="dropdown-item" href="#">Exit</a></li>
-                        </ul>
-                      </div>
-                </div>
-            </div>
-            <!-- fine sezione in alto -->
-            <!-- sezione hero album -->
-            <div class="row mt-5 d-flex align-items-end">
-                <div class="col-3" id="foto-profilo">
-                    
-                </div>
-                <div class="col-9 mb-5">
-                    <span class="fw-bold">Album</span>
-                    <h1 id="album-title"></h1>
-                    <div class="dettagli-hero" id="artist-profile">
-                        <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="">
-                        <span class="fw-bold" id="artist-name">Pinguini Tattici Nucleari</span>
-                        <span>•</span>
-                        <span class="fw-bold">2017</span>
-                        <span>•</span>
-                        <span class="fw-bold">12 Brani, </span>
-                        <span>53 min 20 sec</span>
-                    </div>
-                </div>
-            </div>
+
+      <!-- sticky lettore musicale -->
+      <nav class="navbar fixed-bottom lettore-musicale d-flex justify-content-between align-items-center px-3 ">
+        <!-- sezione a destracon l'img della canzone e icona con il cuore -->
+        <div class="d-flex align-items-center gap-4 ">
+          <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="" style="width: 80px;">
+          <div class="d-flex flex-column">
+            <span class="fw-bold text-light">Fat Funny Friend</span>
+            <span class="text-light opacity-25 ">Maddie Zahm</span>
+          </div>
+          <i class="bi bi-heart text-light opacity-25 fs-3"></i>
         </div>
-        <!-- fine hero -->
-        <!-- Lista canzoni -->
-        <div class="position-absolute lista-canzoni">
-            <!-- play button, like and download -->
-            <div class="d-flex align-items-center gap-3 interactive-btn ">
-                <span><i class="bi bi-play-fill"></i></span>
-                <span><i class="bi bi-heart"></i></span>
-                <span><i class="bi bi-arrow-down-circle"></i></span>
-                <span><i class="bi bi-three-dots"></i></span>
-            </div>
-            <!-- table con tutte le canzoni -->
-            <table class="table mt-5">
-                <thead>
-                  <tr>
-                    <th class="col-1">#</th>
-                    <th class="col-7">Titolo</th>
-                    <th class="col-2">Riproduzioni</th>
-                    <th class="col-2"><i class="bi bi-clock"></i></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="col-1">1</th>
-                    <td class="col-7">Mark</td>
-                    <td class="col-2">Otto</td>
-                    <td class="col-2">@mdo</td>
-                  </tr>
-                </tbody>
-              </table>
+
+        <!-- parte centrale con play e random -->
+        <div class="d-flex flex-column play-btn gap-2">
+          <div class="d-flex justify-content-center ">
+            <i class="bi bi-shuffle text-success fs-3"></i>
+            <i class="bi bi-chevron-bar-left text-light opacity-25 fs-3"></i>
+            <span><i class="bi bi-play-fill fs-3 text-black"></i></span>
+            <i class="bi bi-chevron-bar-right text-light opacity-25 fs-3"></i>
+            <i class="bi bi-arrow-clockwise text-success fs-3"></i>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar"></div>
+          </div>
         </div>
-      </main>
+
+          <!-- parte a destra con icone e volume -->
+        <div class="d-flex align-items-center gap-2 ">
+          <i class="bi bi-mic text-light opacity-25 fs-3"></i>
+          <i class="bi bi-collection text-light opacity-25 fs-3"></i>
+          <i class="bi bi-music-player text-light opacity-25 fs-3"></i>
+          <i class="bi bi-volume-down-fill text-light opacity-25 fs-3"></i>
+          <input type="range">
+          <i class="bi bi-arrows-angle-expand text-light opacity-25 fs-3"></i>
+        </div>
+      </nav>
+
+      
+
+      <!-- script di fontawesome -->
+    <script src="https://kit.fontawesome.com/83cea38f14.js" crossorigin="anonymous"></script>
     <!-- SCRIPT DI BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- SCRIPT PERSONALE -->
