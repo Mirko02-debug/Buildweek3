@@ -17,7 +17,10 @@
     <div class="primocontenitoresx">
         <p><i id="dots" class="fa-solid fa-ellipsis"></i></p>
         <p><i id="home" class="fa-solid fa-house"></i>Home</i></p>
-        <p><i id="cerca" class="fa-solid fa-magnifying-glass"></i>Cerca</i></p>
+        <div class="d-flex">
+          <button id="search" class="bg-transparent border-0"><i id="cerca" class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" class="bg-black border-0 text-white" placeholder="Cerca" id="filterInput">
+        </div>
         <p><i id="library" class="fa-solid fa-lines-leaning"></i></i>La tua libreria</i></p>
         <p><i id="plus" class="fa-solid fa-square-plus"></i>Crea playlist</p>
         <p><i id="heart" class="fa-solid fa-heart"></i>Brani che ti piacciono</p>
@@ -49,8 +52,6 @@
     <!-- main -->
     <main class="container bordo position-relative">
       <div class="hero">
-          <input type="text" id="filter-input">
-          <label for="filterInput"></label>
           <!-- sezione in alto con i due bottoni per tornare indietro e un user profile -->
           <div class="d-flex justify-content-between">
               <div class="d-flex arrow-buttons">
@@ -211,7 +212,7 @@
           <i class="bi bi-collection text-light opacity-25 fs-3"></i>
           <i class="bi bi-music-player text-light opacity-25 fs-3"></i>
           <i class="bi bi-volume-down-fill text-light opacity-25 fs-3"></i>
-          <input type="range">
+          <input type="range" id="lettore">
           <i class="bi bi-arrows-angle-expand text-light opacity-25 fs-3"></i>
         </div>
       </nav>

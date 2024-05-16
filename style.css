@@ -368,3 +368,24 @@ body {
     margin-top: 20px;
     color: #ffffff;
 }
+
+#filter-input:hover {
+    border: none;
+}
+
+#filter-input:active {
+    border: none;
+}
+#filter-input:focus-visible {
+    border: none;
+}
+#filter-input:focus-within{
+    border: none
+}
+#filter-input:focus {
+    border: none;
+    outline: none;
+}
+input::-webkit-input-placeholder {
+    color: white;
+}

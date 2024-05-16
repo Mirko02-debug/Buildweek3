@@ -119,7 +119,7 @@ table.table {
 }
 
 
-input {
+#lettore {
     height: 4px;
     appearance: none;
     width: 100%;
@@ -128,7 +128,7 @@ input {
     transition: 0.2s ease;
     background-color: #5e5e5e;
   }
-  input[type="range"]::-webkit-slider-thumb {
+  #lettore[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     /* display: none; */
     width: 12px;
@@ -137,10 +137,10 @@ input {
     background-color: green;
   }
   
-  input[type="range"]:hover {
+  #lettore[type="range"]:hover {
     background: green;
   }
-  input[type="range"]::-webkit-slider-thumb:hover {
+  #lettore[type="range"]::-webkit-slider-thumb:hover {
     background-color: white;
   }
 
@@ -319,3 +319,23 @@ input {
     margin-right: 10px;
 }
 
+#filterInput:hover {
+    border: none;
+}
+
+#filterInput:active {
+    border: none;
+}
+#filterInput:focus-visible {
+    border: none;
+}
+#filterInput:focus-within{
+    border: none
+}
+#filterInput:focus {
+    border: none;
+    outline: none;
+}
+input::-webkit-input-placeholder {
+    color: white;
+}

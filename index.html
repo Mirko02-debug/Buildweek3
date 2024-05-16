@@ -18,7 +18,10 @@
         <div class="primocontenitoresx">
             <p><i id="dots" class="fa-solid fa-ellipsis"></i></p>
             <p><i id="home" class="fa-solid fa-house"></i>Home</i></p>
-            <p><i id="cerca" class="fa-solid fa-magnifying-glass"></i>Cerca</i></p>
+            <div class="d-flex">
+                <button id="search" onclick="searchInput()" class="bg-transparent border-0"><i id="cerca" class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" class="bg-black border-0 text-white" placeholder="Cerca" id="filter-input">
+            </div>
             <p><i id="library" class="fa-solid fa-lines-leaning"></i></i>La tua libreria</i></p>
             <p><i id="plus" class="fa-solid fa-square-plus"></i>Crea playlist</p>
             <p><i id="heart" class="fa-solid fa-heart"></i>Brani che ti piacciono</p>
@@ -48,7 +51,7 @@
             <p class="sx">cit. Kimiko (lug-ago 2022)</p>
         </div>
         <!--SEZIONE BOTTONI E DROP-->
-        <div class="main">
+        <div class="main" id="center-div">
             <div class="up">
                 <div class="bottoni">
                     <div class="btn1"><i class="fa-solid fa-chevron-left"></i></div>
