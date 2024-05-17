@@ -22,13 +22,13 @@ async function chiamataFetch() {
     sec = parseInt(totSec - (min*60));
     const hero = document.getElementById('hero');
     hero.innerHTML = `<div class="col-3" id="foto-profilo">
-                        <img src="${data.cover_medium}" alt="" style="width: 100%">
+                        <img class="shadow" src="${data.cover_medium}" alt="" style="width: 100%">
                        </div>
                         <div class="col-9 mb-5">
                             <span class="fw-bold">Album</span>
                             <h1 id="album-title"></h1>
                             <div class="dettagli-hero" id="artist-profile">
-                                <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="">
+                                <img src="${data.artist.picture}" alt="">
                                 <span class="fw-bold" id="artist-name">${data.artist.name}</span>
                                 <span>•</span>
                                 <span class="fw-bold">2017</span>
@@ -48,9 +48,9 @@ async function chiamataFetch() {
         `
                 <tr>
                   <th class="col-1">${ashtag}</th>
-                  <td class="col-7">${traccia.title}</td>
-                  <td class="col-2">${traccia.rank}</td>
-                  <td class="col-2">${min}:${sec}</td>
+                  <td class="col-7 d-flex flex-column justify-content-center "><span>${traccia.title}</span><span class="opacity-25">${traccia.album.title}</span></td>
+                  <td class="col-2 opacity-25">${traccia.rank}</td>
+                  <td class="col-2 opacity-25">${min}:${sec}</td>
                 </tr>
         `
     });
