@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Errore durante il recupero delle tracce:", error);
     }
-  }
+  };
 
   function displayTracce(tracce) {
     const container = document.querySelector(".jumbo");
