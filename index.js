@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayTracce(tracce) {
     const container = document.querySelector(".jumbo");
-    container.innerHTML = ''; 
+    container.innerHTML = '';
     tracce.forEach(traccia => {
       container.innerHTML = `
         <div class="album-img">
@@ -41,64 +41,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayImgs(tracce) {
     const picsContainer = document.querySelector(".album-shelf");
-    picsContainer.innerHTML = ''; 
+    picsContainer.innerHTML = '';
 
     // Randomizzo tracce
     tracce.sort(() => Math.random() - 0.5);
 
     // Array dei testi da inserire nei paragrafi
     const testi = [
-        "Early Stage Emily Syndrome (set-ott 2022)",
-        "Be The Young",
-        "Saggio Vibes 🎉 [] 📡",
-        "Brani che ti piacciono",
-        "2021101",
-        "Deep Dive with Ali Abdaal"
+      "Early Stage Emily Syndrome (set-ott 2022)",
+      "Be The Young",
+      "Saggio Vibes 🎉 [] 📡",
+      "Brani che ti piacciono",
+      "2021101",
+      "Deep Dive with Ali Abdaal"
     ];
 
     // Divido l'array di tracce in gruppi di 4
     for (let i = 0; i < tracce.length; i += 4) {
-        const tracceGroup = tracce.slice(i, i + 4);
+      const tracceGroup = tracce.slice(i, i + 4);
 
-        // Verifico se il gruppo ha solo una traccia
-        if (tracceGroup.length === 1) {
-            continue; // Salto questo gruppo 
-        }
+      // Verifico se il gruppo ha solo una traccia
+      if (tracceGroup.length === 1) {
+        continue; // Salto questo gruppo 
+      }
 
-        let groupHTML = `
+      let groupHTML = `
         <div class="card-random">
           <div class="album-pics">
         `;
 
-        tracceGroup.forEach(traccia => {
-            groupHTML += `
+      tracceGroup.forEach(traccia => {
+        groupHTML += `
               <div class="album-mini">
                   <img src="${traccia.album.cover_medium}" alt="copertina album">
               </div>
             `;
-        });
+      });
 
-        groupHTML += `
+      groupHTML += `
           </div>
-          <p>${testi[i/4]}</p>
+          <p>${testi[i / 4]}</p>
         </div>
         `;
 
-        picsContainer.innerHTML += groupHTML;
+      picsContainer.innerHTML += groupHTML;
     }
-}
+  }
 
 
 
-function displayCard(tracce) {
-  const card = document.getElementById("card");
-  card.innerHTML = ''; 
+  function displayCard(tracce) {
+    const card = document.getElementById("card");
+    card.innerHTML = '';
 
-  // Le tracce da visualizzare sono  15
-  const tracceLimitate = tracce.slice(0, 15);
+    // Le tracce da visualizzare sono  15
+    const tracceLimitate = tracce.slice(0, 15);
 
-  tracceLimitate.forEach(traccia => {
-    card.innerHTML += `
+    tracceLimitate.forEach(traccia => {
+      card.innerHTML += `
       <div class="card-container" style="width: 10rem;">
           <img src="${traccia.album.cover_medium}" class="card-img-top" alt="${traccia.album.title}">
           <div class="card-body">
@@ -107,12 +107,12 @@ function displayCard(tracce) {
           </div>
       </div>
     `;
-  });
-}
+    });
+  }
 
 
   fetchTraccia();
-displayCard();
+  displayCard();
 
   // 16.05 Chiamata alla funzione al caricamento della pagina
 
@@ -201,8 +201,22 @@ displayCard();
       `;
       });
     }
+    function mostraAnnuncio() {
+      const pAnnuncio = document.querySelector('.annunci p');
+      pAnnuncio.style.display = 'block';
+  }
+  
+  
+  
+  function nascondiAnnuncio() {
+      const pAnnuncio = document.querySelector('.annunci p');
+      pAnnuncio.style.display = 'none';
+  }
 
     // Chiamata alla funzione al caricamento della pagina
     fetchTraccia();
+    mostraAnnuncio();
+    nascondiAnnuncio();
+    
   })
 });
