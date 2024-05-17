@@ -138,7 +138,7 @@ displayCard();
                     <div class="d-flex align-items-center justify-content-center mt-3"><img src="${traccia.album.cover_medium}" alt="copertina album"></div>
                     <div class="card-body">
                         <h3 class="card-text"><a href="/Album/album.html?id=${traccia.album.id}">${traccia.album.title}</a></h3>
-                        <p class="card-text"><a href="/Artist/artist.html">${traccia.artist.name}.</a></p>
+                        <p class="card-text"><a href="/Artist/artist.html?id=${traccia.artist.id}">${traccia.artist.name}.</a></p>
                         <div class="d-flex justify-content-between align-items-center">
                             <small>${min} min ${sec} sec</small>
                         </div>

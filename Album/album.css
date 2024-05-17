@@ -1,7 +1,7 @@
-.bordo {
+/* .bordo {
     border: 2px solid red;
     height: 100vh;
-}
+} */
 
 body {
     background-color: #121212;
@@ -62,7 +62,7 @@ h1 {
 }
 
 .hero {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 600px;
     background-color: burlywood;
 }
@@ -70,7 +70,7 @@ h1 {
 /* Lista canzoni */
 
 .lista-canzoni {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 100%;
     width: 98.2%;
     top: 450px;
