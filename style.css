@@ -345,11 +345,6 @@ body {
     flex-wrap: wrap;
 }
 
-.album-mini {
-    width: 50%;
-    height: 50%;
-}
-
 .album-mini img {
     width: 25px;
     height: 25px;
@@ -382,7 +377,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 00px;
     color: #ffffff;
 }
 

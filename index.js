@@ -90,21 +90,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  function displayCard(tracce) {
-    const card = document.getElementById("card");
-    card.innerHTML = ''; 
-    tracce.forEach(traccia => {
-      card.innerHTML += `
-        <div class="card-container" style="width: 10rem;">
-            <img src="${traccia.album.cover_medium}" class="card-img-top" alt="${traccia.album.title}">
-            <div class="card-body">
-                <h5 class="card-title mt-1 ">${traccia.album.title}</h5>
-                <p class="card-text">${traccia.artist.name}</p>
-            </div>
-        </div>
-      `;
-    });
-  }
+function displayCard(tracce) {
+  const card = document.getElementById("card");
+  card.innerHTML = ''; 
+
+  // Le tracce da visualizzare sono  15
+  const tracceLimitate = tracce.slice(0, 15);
+
+  tracceLimitate.forEach(traccia => {
+    card.innerHTML += `
+      <div class="card-container" style="width: 10rem;">
+          <img src="${traccia.album.cover_medium}" class="card-img-top" alt="${traccia.album.title}">
+          <div class="card-body">
+              <h5 class="card-title mt-1 ">${traccia.album.title}</h5>
+              <p class="card-text">${traccia.artist.name}</p>
+          </div>
+      </div>
+    `;
+  });
+}
+
 
   fetchTraccia();
 displayCard();
