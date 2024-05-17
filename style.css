@@ -502,3 +502,8 @@ input::-webkit-input-placeholder {
         width: 100%;
     }
   }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }

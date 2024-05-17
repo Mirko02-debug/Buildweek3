@@ -59,8 +59,9 @@ async function chiamataFetch() {
 
 chiamataFetch();
 
-//PER CALCOLARE I MINUTI (E I SECONDI) PRENDIAMO LA DURATA, DIVIDIAMO PER 60 E POI PRENDIAMO  
-/** 128 SECONDI = 2 MINUTI E 8 SECONDI
- * 128 / 60 = 2,13 -> 2 minuti + (0.13333 * 60) -> prendo il numero intero e poi faccio il risultato -> il numero intero
- * 2,13 -> parseInt(2,13) -> 2 -> 2,13-2  = 0,13 * 60 = 8 secondi
- */
+function searchInput() {
+    const filterInput = document.getElementById(`filter-input`).value.toLowerCase();
+    filter = filterInput;
+    chiamataFetch();
+    filter= ``;
+  }
