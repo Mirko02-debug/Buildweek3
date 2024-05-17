@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayTracce(tracce) {
     const container = document.querySelector(".jumbo");
-    container.innerHTML = ''; // Pulire il contenitore prima di aggiungere nuovi elementi
+    container.innerHTML = ''; 
     tracce.forEach(traccia => {
       container.innerHTML = `
         <div class="album-img">
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const picsContainer = document.querySelector(".album-shelf");
     picsContainer.innerHTML = ''; 
 
-    // Mescola l'array di tracce
+    // Randomizzo tracce
     tracce.sort(() => Math.random() - 0.5);
 
     // Array dei testi da inserire nei paragrafi
@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Deep Dive with Ali Abdaal"
     ];
 
-    // Dividi l'array di tracce in gruppi di 4
+    // Divido l'array di tracce in gruppi di 4
     for (let i = 0; i < tracce.length; i += 4) {
         const tracceGroup = tracce.slice(i, i + 4);
 
-        // Verifica se il gruppo ha solo una traccia
+        // Verifico se il gruppo ha solo una traccia
         if (tracceGroup.length === 1) {
-            continue; // Salto questo gruppo e procedi al prossimo
+            continue; // Salto questo gruppo 
         }
 
         let groupHTML = `
