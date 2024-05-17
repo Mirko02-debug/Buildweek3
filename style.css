@@ -6,6 +6,7 @@
 
 body {
     background-color: #171717;
+    scroll-behavior: smooth;
 }
 
 .quadrati {
@@ -180,7 +181,6 @@ body {
 }
 
 .main {
-    border: 3px solid red;
     width: 900px;
     overflow-y: scroll;
 }
@@ -254,14 +254,17 @@ body {
 
 .txt-btn {
     margin-left: 20px;
-
 }
 
 .album-img {
-    border: 2px solid fuchsia;
     height: 150px;
     width: 150px;
     margin-left: 20px;
+}
+
+.album-img img {
+    height: 150px;
+    width: 150px;
 }
 
 .album,
@@ -309,52 +312,100 @@ body {
     padding: 5px 10px;
     color: #4c4c4c;
 }
-.bnsr{
+
+.bnsr {
     margin-left: 20px;
     margin-top: 20px;
     color: #ffffff;
     font-size: 30px;
 }
-.album-shelf{
+
+.album-shelf {
     margin: auto;
     margin-top: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 2px solid blue;
     width: 95%;
     height: 200px;
 }
-.card-random{
-    border: 2px solid fuchsia;
-    height: 35%;
+
+.card-random {
+    height: 30%;
     width: 30%;
     display: flex;
     justify-content: space-between;
+    background-color: #2d2d2d;
 }
-.album-pics{
-    border: 2px solid green;
-    width: 28%;
+
+.album-pics {
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
 }
-.album-mini{
-    border: 2px solid red;
+
+.album-mini {
     width: 50%;
     height: 50%;
 }
-.like{
+
+.album-mini img {
+    width: 25px;
+    height: 25px;
+}
+
+.album-pics p {
+    width: 25px;
+    height: 25px;
+    margin-top: 50vh;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 10px; 
+    text-align: center; 
+
+}
+
+.like {
     margin-left: 20px;
     margin-top: 20px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
 }
-.card-random p{
+
+.card-random p {
     color: #ffffff;
     font-size: 12px;
 }
-.album-shelf-titoli{
+
+.card-album {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.card-album img {
+    border-radius: 15px;
+}
+
+.card-container {
+    background-color: #181313;
+    border-radius: 20px;
+
+}
+
+.card {
+    margin-bottom: 16px;
+
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.album-shelf-titoli {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -362,7 +413,8 @@ body {
     display: flex;
     align-items: center;
 }
-.tit2{
+
+.tit2 {
     font-size: 12px;
     margin-right: 20px;
     margin-top: 20px;
@@ -376,16 +428,82 @@ body {
 #filter-input:active {
     border: none;
 }
+
 #filter-input:focus-visible {
     border: none;
 }
-#filter-input:focus-within{
+
+#filter-input:focus-within {
     border: none
 }
+
 #filter-input:focus {
     border: none;
     outline: none;
 }
+
 input::-webkit-input-placeholder {
     color: white;
 }
+.lettore-musicale {
+    background-color: #181818;
+}
+
+.play-btn span {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;  
+  background-color: #fff;
+  border-radius: 50px;
+  padding-top: 1px;
+}
+
+
+#lettore {
+    height: 4px;
+    appearance: none;
+    width: 100%;
+    margin: 2px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    background-color: #5e5e5e;
+  }
+  #lettore[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* display: none; */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  
+  #lettore[type="range"]:hover {
+    background: green;
+  }
+  #lettore[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+  }
+
+  .progress-bar {
+    animation: progresso;
+    animation-duration: 180s; /* Durata dell'animazione in secondi */
+    animation-iteration-count: infinite; /* Numero di volte che l'animazione si ripete (es. infinite per ripetersi all'infinito) */
+    animation-timing-function: ease;
+
+  }
+
+  .progress {
+    --bs-progress-bar-bg: #f8f9fa;
+    background-color: #adb5bd;
+    height: 5px;
+    width: 700px;
+}
+
+  @keyframes progresso {
+    0% {
+        width: 0%;
+    } 100% {
+        width: 100%;
+    }
+  }

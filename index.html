@@ -19,7 +19,8 @@
             <p><i id="dots" class="fa-solid fa-ellipsis"></i></p>
             <p><i id="home" class="fa-solid fa-house"></i>Home</i></p>
             <div class="d-flex">
-                <button id="search" onclick="searchInput()" class="bg-transparent border-0"><i id="cerca" class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="search" onclick="searchInput()" class="bg-transparent border-0"><i id="cerca"
+                        class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" class="bg-black border-0 text-white" placeholder="Cerca" id="filter-input">
             </div>
             <p><i id="library" class="fa-solid fa-lines-leaning"></i></i>La tua libreria</i></p>
@@ -151,6 +152,17 @@
                 <h5 class="like">Altro di ciò che ti piace</h5>
                 <h5 class="tit2">VISUALIZZA TUTTO</h5>
             </div>
+            <div id="card" class="card-album">
+                <div class="card-container" style="width: 12rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--SEZIONE DESTRA-->
         <div class="contenitoredx">
@@ -200,41 +212,43 @@
             </div>
         </div>
     </div>
-    <nav class="navbar fixed-bottom lettore-musicale d-flex justify-content-between align-items-center px-3 ">
-        <!-- sezione a destracon l'img della canzone e icona con il cuore -->
-        <div class="d-flex align-items-center gap-4 ">
-          <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="" style="width: 80px;">
-          <div class="d-flex flex-column">
-            <span class="fw-bold text-light">Fat Funny Friend</span>
-            <span class="text-light opacity-25 ">Maddie Zahm</span>
-          </div>
-          <i class="bi bi-heart text-light opacity-25 fs-3"></i>
-        </div>
+<!-- sticky lettore musicale -->
+<nav class="navbar fixed-bottom lettore-musicale d-flex justify-content-between align-items-center px-3 ">
+    <!-- sezione a destracon l'img della canzone e icona con il cuore -->
+    <div class="d-flex align-items-center gap-4 " >
+      <img src="img-user/Immagine WhatsApp 2023-11-19 ore 18.04.26_0543847ss3.jpg" alt="" style="width: 80px;">
+      <div class="d-flex flex-column">
+        <span class="fw-bold text-light">Fat Funny Friend</span>
+        <span class="text-light opacity-25 ">Maddie Zahm</span>
+      </div>
+      <i class="bi bi-heart text-light opacity-25 fs-3"></i>
+    </div>
 
-        <!-- parte centrale con play e random -->
-        <div class="d-flex flex-column play-btn gap-2">
-          <div class="d-flex justify-content-center ">
-            <i class="bi bi-shuffle text-success fs-3"></i>
-            <i class="bi bi-chevron-bar-left text-light opacity-25 fs-3"></i>
-            <span><i class="bi bi-play-fill fs-3 text-black"></i></span>
-            <i class="bi bi-chevron-bar-right text-light opacity-25 fs-3"></i>
-            <i class="bi bi-arrow-clockwise text-success fs-3"></i>
-          </div>
-          <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar"></div>
-          </div>
-        </div>
+    <!-- parte centrale con play e random -->
+    <div class="d-flex flex-column play-btn gap-2">
+      <div class="d-flex justify-content-center ">
+        <i class="bi bi-shuffle text-success fs-3"></i>
+        <i class="bi bi-chevron-bar-left text-light opacity-25 fs-3"></i>
+        <span><i class="bi bi-play-fill fs-3 text-black"></i></span>
+        <i class="bi bi-chevron-bar-right text-light opacity-25 fs-3"></i>
+        <i class="bi bi-arrow-clockwise text-success fs-3"></i>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
 
-          <!-- parte a destra con icone e volume -->
-        <div class="d-flex align-items-center gap-2 ">
-          <i class="bi bi-mic text-light opacity-25 fs-3"></i>
-          <i class="bi bi-collection text-light opacity-25 fs-3"></i>
-          <i class="bi bi-music-player text-light opacity-25 fs-3"></i>
-          <i class="bi bi-volume-down-fill text-light opacity-25 fs-3"></i>
-          <input type="range">
-          <i class="bi bi-arrows-angle-expand text-light opacity-25 fs-3"></i>
-        </div>
-      </nav>
+      <!-- parte a destra con icone e volume -->
+    <div class="d-flex align-items-center gap-2 ">
+      <i class="bi bi-mic text-light opacity-25 fs-3"></i>
+      <i class="bi bi-collection text-light opacity-25 fs-3"></i>
+      <i class="bi bi-music-player text-light opacity-25 fs-3"></i>
+      <i class="bi bi-volume-down-fill text-light opacity-25 fs-3"></i>
+      <input type="range" id="lettore">
+      <i class="bi bi-arrows-angle-expand text-light opacity-25 fs-3"></i>
+    </div>
+  </nav>
+
 
     <script src="https://kit.fontawesome.com/5581abaa8c.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
